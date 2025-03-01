@@ -1,4 +1,4 @@
-package com.maddenmanel.aiassistant.center.service;
+package com.maddenmanel.aiassistant.center.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.maddenmanel.aiassistant.center.dto.AIAnswerDTO;
 import com.maddenmanel.aiassistant.center.dto.ChatRequestDTO;
+import com.maddenmanel.aiassistant.center.service.GptService;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -21,7 +22,7 @@ import java.util.*;
 
 
 @Service
-public class GptServiceImpl {
+public class GptServiceImpl implements GptService{
 
     private WebClient webClient;
 
