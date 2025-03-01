@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: aiassistant-center
+  datasource:
+    url: jdbc:mysql://192.168.18.241:3306/dl_underwriting_rule_db?useServerPrepStmts=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useCursorFetch=true
+    username: underdb_rule_app
+    password: C6DGha&g8Rfww%h99
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  ai:
+    openai:
+      api-key: sk-3cd4bfe1cb7c4590b9573f97e325215d
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.7
+      embedding:
+        enabled: false
+
+
